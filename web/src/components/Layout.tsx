@@ -18,11 +18,13 @@ export function Layout() {
           <span>Knowledge OS</span>
         </div>
         {links.map((l) => (
-          <NavLink key={l.to} to={l.to} end={l.to === "/"} className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+          <NavLink key={l.to} to={`/app${l.to === "/" ? "" : l.to}`} end={l.to === "/"} className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
             {l.label}
           </NavLink>
         ))}
-        <p className="footer-note">Validated units only reach agents.</p>
+        <p className="footer-note">
+          <a href="/" style={{ color: "var(--muted)" }}>← Landing</a>
+        </p>
       </aside>
       <main className="main">
         <Outlet />

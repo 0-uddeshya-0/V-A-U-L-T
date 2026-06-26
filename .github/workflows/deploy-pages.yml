@@ -31,6 +31,7 @@ jobs:
           npm run build
         env:
           VITE_BASE_PATH: /V-A-U-L-T/
+          VITE_LANDING_ONLY: "true"
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -46,3 +46,4 @@ jobs:
         run: npm run build
         env:
           VITE_BASE_PATH: /V-A-U-L-T/
+          VITE_LANDING_ONLY: "true"

@@ -40,12 +40,12 @@ export function Dashboard() {
         <div className="card">
           <h3>Quarantine</h3>
           <p style={{ fontSize: "1.75rem", fontWeight: 600 }}>{quarantineCount ?? "—"}</p>
-          <Link to="/quarantine">Review queue →</Link>
+          <Link to="/app/quarantine">Review queue →</Link>
         </div>
         <div className="card">
           <h3>Learning gaps</h3>
           <p style={{ fontSize: "1.75rem", fontWeight: 600 }}>{gapCount ?? "—"}</p>
-          <Link to="/gaps">View gaps →</Link>
+          <Link to="/app/gaps">View gaps →</Link>
         </div>
         <div className="card">
           <h3>Quick start</h3>
