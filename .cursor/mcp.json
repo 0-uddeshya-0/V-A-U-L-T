@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "vault": {
+      "command": "vault-mcp",
+      "env": {
+        "VAULT_NEO4J_URI": "bolt://localhost:7687",
+        "VAULT_NEO4J_PASSWORD": "vault-dev-password"
+      }
+    }
+  }
+}
